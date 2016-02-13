@@ -1,0 +1,6 @@
+
+grammar;
+
+pub Component = "MACHINE" Identifier "END";
+
+Identifier = r"[a-zA-Z][a-zA-Z_-]*";
