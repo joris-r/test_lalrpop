@@ -5,7 +5,7 @@ use test::*;
 
 
 fn main() {
-    let src = "MACHINE mch END";
+    let src = "IMPLEMENTATION ref REFINES mch END";
     let res = parse_Component(src);
     println!("{:?}",res);
 }

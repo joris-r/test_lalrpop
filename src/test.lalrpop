@@ -1,6 +1,14 @@
 
 grammar;
 
-pub Component = "MACHINE" Identifier "END";
+pub Component = Header Identifier Statements "END";
+
+Header = { "MACHINE", "REFINEMENT", "IMPLEMENTATION" };
+
+Statements = {
+    "REFINES" Ident_list,
+};
+
+Ident_list = Identifier;
 
 Identifier = r"[a-zA-Z][a-zA-Z_-]*";
